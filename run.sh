@@ -32,4 +32,4 @@ fi
 echo "Cleanup complete."
 
 docker build -t jomhantar:latest .
-docker run -d -p 5000:5000
+docker run -d --name jomhantar -p 8080:8080 jomhantar:latest 
